@@ -9,7 +9,7 @@ import {
 import Room from "./Components/Room";
 
 
-const endPoint = "https://rbclonebackend.herokuapp.com/searchcity/videojwt";
+const endPoint = "https://rbclonebackend.herokuapp.com/videojwt";
 
 const getToken = async (user_id) => {
   const response = await fetch(`${endPoint}`, {
