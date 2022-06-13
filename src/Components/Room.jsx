@@ -1,5 +1,6 @@
 import React from "react";
 import VideoTile from "./VideoTile";
+import styles from "./Room.module.css"
 import {
   useHMSStore,
   selectLocalPeer,
@@ -19,9 +20,9 @@ const Room = () => {
             .filter((peer) => !peer.isLocal)
             .map((peer) => {
               return (
-                <>
-                  <VideoTile isLocal={false} peer={peer} />
-                </>
+                <div>
+                  <VideoTile isLocal={false} peer={peer}  />
+                </div>
               );
             })}
       </div>

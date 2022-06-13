@@ -33,9 +33,7 @@ const VideoTile = ({ peer, isLocal }) => {
           autoPlay={true}
           playsInline
           muted={true}
-          className={`object-cover h-64 w-64 rounded-lg shadow-lg ${
-            isLocal ? "mirror" : ""
-          }`}
+          style={{width:"20%"}}
         ></video>
         <div>
           <div>{`${peer.name}`}</div>
